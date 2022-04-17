@@ -1,0 +1,15 @@
+[INFO ] 17-04-2022 17:10:59 [main] Log - Register a new account
+[INFO ] 17-04-2022 17:11:01 [main] Log - Navigate from Home page to Login page
+[INFO ] 17-04-2022 17:11:01 [main] Log - Login with valid username and password
+[INFO ] 17-04-2022 17:11:02 [main] Log - Check Home page URL after logging in successfully
+[INFO ] 17-04-2022 17:11:04 [main] Log - Check Welcome user message on banner after logging in successfully
+[INFO ] 17-04-2022 17:35:36 [main] Log - Register a new account
+[INFO ] 17-04-2022 17:35:38 [main] Log - Navigate from Home page to Login page
+[INFO ] 17-04-2022 17:35:39 [main] Log - Login with valid username and password
+[INFO ] 17-04-2022 17:35:40 [main] Log - Check Home page URL after logging in successfully
+[INFO ] 17-04-2022 17:35:42 [main] Log - Check Welcome user message on banner after logging in successfully
+[INFO ] 17-04-2022 17:37:08 [main] Log - Register a new account
+[INFO ] 17-04-2022 17:37:10 [main] Log - Navigate from Home page to Login page
+[INFO ] 17-04-2022 17:37:10 [main] Log - Login with valid username and password
+[INFO ] 17-04-2022 17:37:11 [main] Log - Check Home page URL after logging in successfully
+[INFO ] 17-04-2022 17:37:13 [main] Log - Check Welcome user message on banner after logging in successfully
