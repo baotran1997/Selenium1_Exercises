@@ -18,6 +18,7 @@ public class TC06 extends BaseTest {
 
     @Test(dataProvider = "getData",description = "User is redirected to Home page after logging out")
     public void TC06(Object[] data) {
+        Log.startTestCase("TC06");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String password = data[1].toString();
         String confirmPassword = data[2].toString();
@@ -42,5 +43,6 @@ public class TC06 extends BaseTest {
 
         Log.info("Check 'Logout' tab is disappeared");
         homePage.isLogoutTabDisplayed();
+        Log.endTestCase();
     }
 }

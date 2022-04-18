@@ -5,7 +5,18 @@ import org.apache.logging.log4j.Logger;
 
 public class Log {
 
-        //Initialize Log4j instance
+    // Print log for the beginning of the test case
+    public static void startTestCase(String testCaseName){
+        Log.info("------------------------Start "+testCaseName+ "------------------------");
+    }
+
+    //Print log for the ending of the test case
+
+    public static void endTestCase(){
+        Log.info("------------------------"+"-E---N---D-"+"------------------------");
+    }
+
+    //Initialize Log4j instance
         private final static  Logger Log =  LogManager.getLogger(Log.class);
 
         //Info Level Logs

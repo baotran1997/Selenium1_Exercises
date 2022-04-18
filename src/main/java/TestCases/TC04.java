@@ -19,6 +19,7 @@ public class TC04 extends BaseTest {
 
     @Test(dataProvider = "getData", description = "User is redirected to Book ticket page after logging in")
     public void TC04(Object @NotNull [] data) {
+        Log.startTestCase("TC04");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String password = data[1].toString();
         String confirmPassword = data[2].toString();
@@ -39,5 +40,6 @@ public class TC04 extends BaseTest {
 
         Log.info("Check user is redirected to Book Ticket page after logging in");
         bookTicketPage.checkBookTicketURL();
+        Log.endTestCase();
     }
 }

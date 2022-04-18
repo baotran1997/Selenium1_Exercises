@@ -18,6 +18,7 @@ public class TC15 extends BaseTest {
 
     @Test(dataProvider = "getData", description = "\"Ticket price\" page displays with ticket details after clicking on \"check price\" link in \"Train timetable\" page")
     public void TC15(Object[] data) throws MalformedURLException {
+        Log.startTestCase("TC15");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String password = data[1].toString();
         String confirmPassword = data[2].toString();
@@ -48,5 +49,6 @@ public class TC15 extends BaseTest {
 
         Log.info("Check Price for each seat displays correctly");
         ticketPricePage.checkPriceForAllSeats(hsPrice, ssPrice, sscPrice, hbPrice, sbPrice, sbcPrice);
+        Log.endTestCase();
     }
 }

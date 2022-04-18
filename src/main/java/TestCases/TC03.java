@@ -13,6 +13,7 @@ public class TC03 extends BaseTest {
 
     @Test(dataProvider = "getData", description = "User cannot log into Railway with invalid password ")
     public void TC03(Object[] data) {
+        Log.startTestCase("TC03");
         String validUsername = data[0].toString();
         String invalidPassword = data[1].toString();
         String expectedErrorMessageOfInvalidFields = data[2].toString();
@@ -25,5 +26,6 @@ public class TC03 extends BaseTest {
 
         Log.info("Check error message of invalid fields");
         loginPage.checkErrorMessageOfInvalidFields(expectedErrorMessageOfInvalidFields);
+        Log.endTestCase();
     }
 }

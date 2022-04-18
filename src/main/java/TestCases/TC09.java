@@ -18,6 +18,7 @@ public class TC09 extends BaseTest {
 
     @Test(dataProvider = "getData",description = "User can't change password when \"New Password\" and \"Confirm Password\" are different.")
     public void TC09(Object[] data) {
+        Log.startTestCase("TC09");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String password = data[1].toString();
         String confirmPassword = data[2].toString();
@@ -46,5 +47,7 @@ public class TC09 extends BaseTest {
 
         Log.info("Check Error Message Of Confirm Password Field");
         changePasswordPage.checkErrorMessageOfConfirmPasswordField(errorMessageOfConfirmPasswordField);
+
+        Log.endTestCase();
     }
 }

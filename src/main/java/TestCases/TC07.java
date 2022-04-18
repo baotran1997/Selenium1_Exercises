@@ -14,6 +14,7 @@ public class TC07 extends BaseTest {
 
     @Test(dataProvider = "getData",description = "User can create new account")
     public void TC07(Object[] data) {
+        Log.startTestCase("TC07");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String password = data[1].toString();
         String confirmPassword = data[2].toString();
@@ -28,5 +29,7 @@ public class TC07 extends BaseTest {
 
         Log.info("Check Register Successfully Message");
         registerPage.checkRegisterSuccessfullyMessage(registerSuccessfullyMessage);
+
+        Log.endTestCase();
     }
 }

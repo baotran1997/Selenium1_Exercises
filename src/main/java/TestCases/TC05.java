@@ -17,6 +17,7 @@ public class TC05 extends BaseTest {
 
     @Test(dataProvider = "getData",description = "System shows message when user enters wrong password several times")
     public void TC05(Object[] data) {
+        Log.startTestCase("TC05");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String password = data[1].toString();
         String confirmPassword = data[2].toString();
@@ -37,5 +38,6 @@ public class TC05 extends BaseTest {
 
         Log.info("Check error system message");
         loginPage.checkErrorSystemMessage(expectedErrorSystemMessage);
+        Log.endTestCase();
     }
 }

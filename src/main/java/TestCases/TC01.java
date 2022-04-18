@@ -15,6 +15,7 @@ public class TC01 extends BaseTest {
 
     @Test(dataProvider = "getData",description = "User can log into Railway with valid username and password")
     public void TC01(Object[] data) throws InterruptedException {
+        Log.startTestCase("TC01");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String password = data[1].toString();
         String confirmPassword = data[2].toString();
@@ -36,5 +37,7 @@ public class TC01 extends BaseTest {
 
         Log.info("Check Welcome user message on banner after logging in successfully");
         homePage.checkWelcomeUserMessage(email);
+
+        Log.endTestCase();
     }
 }

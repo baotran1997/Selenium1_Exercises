@@ -17,6 +17,7 @@ public class TC16 extends BaseTest {
 
     @Test(dataProvider = "getData", description = "User can cancel a ticket")
     public void TC16(Object @NotNull [] data) throws InterruptedException {
+        Log.startTestCase("TC16");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String password = data[1].toString();
         String confirmPassword = data[2].toString();
@@ -52,6 +53,6 @@ public class TC16 extends BaseTest {
 
         Log.info("Check No Ticket message in My Ticket page");
         myTicketPage.checkNoTicketInMyTicketPage();
-
+        Log.endTestCase();
     }
 }

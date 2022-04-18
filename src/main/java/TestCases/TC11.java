@@ -14,6 +14,7 @@ public class TC11 extends BaseTest {
 
     @Test(dataProvider = "getData",description = "User can't create account while password and PID fields are empty")
     public void TC11(Object[] data) {
+        Log.startTestCase("TC11");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String blankPassword = data[1].toString();
         String blankConfirmPassword = data[2].toString();
@@ -36,5 +37,6 @@ public class TC11 extends BaseTest {
 
         Log.info("Check error message invalid Password Length");
         registerPage.checkInvalidPIDLengthMessage(invalidPIDLengthMessage);
+        Log.endTestCase();
     }
 }

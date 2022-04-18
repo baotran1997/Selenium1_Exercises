@@ -14,6 +14,7 @@ public class TC10 extends BaseTest {
 
     @Test(dataProvider = "getData",description = "User can't create account with an already in-use email")
     public void TC10(Object[] data) {
+        Log.startTestCase("TC10");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String password = data[1].toString();
         String confirmPassword = data[2].toString();
@@ -32,5 +33,7 @@ public class TC10 extends BaseTest {
 
         Log.info("Check error message for registering with an already in-use email");
         registerPage.checkErrorMessageForExistingEmail(errorMessageForExistingEmail);
+
+        Log.endTestCase();
     }
 }

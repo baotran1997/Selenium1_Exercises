@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Regression">
-<parameter name="browser" value="firefox" />
+<parameter name="browser" value="chrome" />
 <test name="RegA">
     <classes>
         <class name="TestCases.TC01"/>
-<!--        <class name="TestCases.TC02"/>-->
-<!--        <class name="TestCases.TC03"/>-->
-<!--        <class name="TestCases.TC04"/>-->
-<!--        <class name="TestCases.TC05"/>-->
-<!--        <class name="TestCases.TC06"/>-->
-<!--        <class name="TestCases.TC07"/>-->
-<!--        <class name="TestCases.TC09"/>-->
-<!--        <class name="TestCases.TC10"/>-->
-<!--        <class name="TestCases.TC11"/>-->
-<!--        <class name="TestCases.TC14"/>-->
-<!--        <class name="TestCases.TC15"/>-->
-<!--        <class name="TestCases.TC16"/>-->
+        <class name="TestCases.TC02"/>
+        <class name="TestCases.TC03"/>
+        <class name="TestCases.TC04"/>
+        <class name="TestCases.TC05"/>
+        <class name="TestCases.TC06"/>
+        <class name="TestCases.TC07"/>
+        <class name="TestCases.TC09"/>
+        <class name="TestCases.TC10"/>
+        <class name="TestCases.TC11"/>
+        <class name="TestCases.TC14"/>
+        <class name="TestCases.TC15"/>
+        <class name="TestCases.TC16"/>
     </classes>
 </test>
 </suite>

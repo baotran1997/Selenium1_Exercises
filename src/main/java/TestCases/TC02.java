@@ -13,6 +13,7 @@ public class TC02 extends BaseTest {
 
     @Test(dataProvider = "getData", description = "User can't login with blank \"Username\" text box")
     public void TC02(Object[] data) {
+        Log.startTestCase("TC02");
         String blankUsername = data[0].toString();
         String validPassword = data[1].toString();
         String expectedErrorMessageOfLoginForm = data[2].toString();
@@ -29,5 +30,6 @@ public class TC02 extends BaseTest {
 
         Log.info("Check error message of  email field");
         loginPage.checkErrorMessageOfEmailField(expectedErrorMessageOfEmailField);
+        Log.endTestCase();
     }
 }

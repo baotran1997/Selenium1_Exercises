@@ -20,6 +20,7 @@ public class TC14 extends BaseTest {
 
     @Test(dataProvider = "getData",description = "User can book many tickets at a time")
     public void TC14(Object[] data) throws MalformedURLException, InterruptedException {
+        Log.startTestCase("TC14");
         String email = DataFaker.generateRandomEmail(data[0].toString());
         String password = data[1].toString();
         String confirmPassword = data[2].toString();
@@ -50,6 +51,6 @@ public class TC14 extends BaseTest {
 
         Log.info("Check all book ticket information display correctly");
         bookTicketPage.checkAllTicketInformation(departFrom, arriveAt, seatType, departDate, ticketAmount);
-
+        Log.endTestCase();
     }
 }
