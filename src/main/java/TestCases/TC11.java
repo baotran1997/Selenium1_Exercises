@@ -23,19 +23,19 @@ public class TC11 extends BaseTest {
         String invalidPasswordLengthMessage = data[5].toString();
         String invalidPIDLengthMessage = data[6].toString();
 
-        Log.info("Navigate from Home page to Register page");
+        Log.info("Step 1: Navigate from Home page to Register page");
         homePage.navigateToRegisterPage();
 
-        Log.info("Register account with valid email address and leave other fields empty");
+        Log.info("Step 2: Register account with valid email address and leave other fields empty");
         registerPage.registerAccount(email,blankPassword,blankConfirmPassword,blankPassportNumber);
 
-        Log.info("Check Error Message Of Register Form");
+        Log.info("Expected Behavior: Check Error Message Of Register Form");
         registerPage.checkErrorMessageOfRegisterForm(errorMessageOfRegisterForm);
 
-        Log.info("Check error message invalid Password Length");
+        Log.info("Expected Behavior: Check error message invalid Password Length");
         registerPage.checkInvalidPasswordLengthMessage(invalidPasswordLengthMessage);
 
-        Log.info("Check error message invalid Password Length");
+        Log.info("Expected Behavior: Check error message invalid Password Length");
         registerPage.checkInvalidPIDLengthMessage(invalidPIDLengthMessage);
         Log.endTestCase();
     }

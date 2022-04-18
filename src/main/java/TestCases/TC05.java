@@ -26,17 +26,16 @@ public class TC05 extends BaseTest {
         Integer times = Integer.parseInt(data[5].toString());
         String expectedErrorSystemMessage = data[6].toString();
 
-        Log.info("Register new account");
         homePage.navigateToRegisterPage();
         registerPage.registerAccount(email,password,confirmPassword,passportNumber);
 
-        Log.info("Navigate from Home page to Login page");
+        Log.info("Step 1: Navigate from Home page to Login page");
         homePage.navigateToLoginPage();
 
-        Log.info("Repeat Login 3 times with valid email and wrong password");
+        Log.info("Step 2: Repeat Login 3 times with valid email and wrong password");
         loginPage.repeatLoginWithTimes(times, email, wrongPassword);
 
-        Log.info("Check error system message");
+        Log.info("Expected Behavior: Check error system message");
         loginPage.checkErrorSystemMessage(expectedErrorSystemMessage);
         Log.endTestCase();
     }

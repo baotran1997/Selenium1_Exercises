@@ -30,24 +30,26 @@ public class TC15 extends BaseTest {
         String sbPrice = data[8].toString();
         String sbcPrice = data[9].toString();
 
-        Log.info("Register a new account");
+        Log.info("Pre-condition: Create and activate a new account");
         homePage.navigateToRegisterPage();
         registerPage.registerAccount(email,password,confirmPassword,passportNumber);
 
-        Log.info("Login with valid Email and Password");
+        Log.info("Step 1: Navigate to Login page");
         homePage.navigateToLoginPage();
+
+        Log.info("Step 2: Login with valid Email and Password");
         loginPage.login(email,password);
 
-        Log.info("Navigate from Home page to Time Table page");
+        Log.info("Step 3: Navigate to Time Table page");
         homePage.navigateToTimetablePage();
 
-        Log.info("Click on \"check price\" link of the route from \"Đà Nẵng\" to \"Sài Gòn\"");
+        Log.info("Step 4: Click on \"check price\" link of the route from \"Đà Nẵng\" to \"Sài Gòn\"");
         timeTablePage.clickCheckPriceButtonDaNangToSaiGon();
 
-        Log.info("Check \"Ticket Price\" page is loaded");
+        Log.info("Expected Behavior: Check \"Ticket Price\" page is loaded");
         ticketPricePage.checkTicketPricePagePath();
 
-        Log.info("Check Price for each seat displays correctly");
+        Log.info("Expected Behavior: Check Price for each seat displays correctly");
         ticketPricePage.checkPriceForAllSeats(hsPrice, ssPrice, sscPrice, hbPrice, sbPrice, sbcPrice);
         Log.endTestCase();
     }

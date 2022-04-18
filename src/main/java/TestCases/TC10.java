@@ -21,17 +21,18 @@ public class TC10 extends BaseTest {
         String passportNumber = data[3].toString();
         String errorMessageForExistingEmail = data[4].toString();
 
-        Log.info("Navigate from Home page to Register page");
-        homePage.navigateToRegisterPage();
-
-        Log.info("Register a new account");
-        registerPage.registerAccount(email,password,confirmPassword,passportNumber);
-
-        Log.info("Register again with an already in-use email above");
+        Log.info("Pre-condition: Create and activate a new account");
         homePage.navigateToRegisterPage();
         registerPage.registerAccount(email,password,confirmPassword,passportNumber);
 
-        Log.info("Check error message for registering with an already in-use email");
+        Log.info("Step 1: Navigate from Home page to Register page");
+        homePage.navigateToRegisterPage();
+
+        Log.info("Step 2: Register with information of the created account in Pre-condition");
+        homePage.navigateToRegisterPage();
+        registerPage.registerAccount(email,password,confirmPassword,passportNumber);
+
+        Log.info("Expected Behavior: Check error message for registering with an already in-use email");
         registerPage.checkErrorMessageForExistingEmail(errorMessageForExistingEmail);
 
         Log.endTestCase();

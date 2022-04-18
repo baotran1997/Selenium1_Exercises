@@ -21,13 +21,13 @@ public class TC07 extends BaseTest {
         String passportNumber = data[3].toString();
         String registerSuccessfullyMessage = data[4].toString();
 
-        Log.info("Navigate from Home page to Register page");
+        Log.info("Step 1: Navigate from Home page to Register page");
         homePage.navigateToRegisterPage();
 
-        Log.info("Enter valid register information");
+        Log.info("Step 2: Enter valid register information");
         registerPage.registerAccount(email, password, confirmPassword, passportNumber);
 
-        Log.info("Check Register Successfully Message");
+        Log.info("Expected Behavior: Check Register Successfully Message");
         registerPage.checkRegisterSuccessfullyMessage(registerSuccessfullyMessage);
 
         Log.endTestCase();

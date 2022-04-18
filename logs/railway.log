@@ -1,90 +1,90 @@
-[INFO ] 18-04-2022 13:36:37 [main] Log - ------------------------Start TC01------------------------
-[INFO ] 18-04-2022 13:36:37 [main] Log - Register a new account
-[INFO ] 18-04-2022 13:36:39 [main] Log - Navigate from Home page to Login page
-[INFO ] 18-04-2022 13:36:40 [main] Log - Login with valid username and password
-[INFO ] 18-04-2022 13:36:42 [main] Log - Check Home page URL after logging in successfully
-[INFO ] 18-04-2022 13:36:44 [main] Log - Check Welcome user message on banner after logging in successfully
-[INFO ] 18-04-2022 13:36:44 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:36:49 [main] Log - ------------------------Start TC02------------------------
-[INFO ] 18-04-2022 13:36:49 [main] Log - Navigate from Home page to Login page
-[INFO ] 18-04-2022 13:36:50 [main] Log - Login with blank Email and valid Password
-[INFO ] 18-04-2022 13:36:51 [main] Log - Check error message of login form
-[INFO ] 18-04-2022 13:36:51 [main] Log - Check error message of  email field
-[INFO ] 18-04-2022 13:36:51 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:36:56 [main] Log - ------------------------Start TC03------------------------
-[INFO ] 18-04-2022 13:36:56 [main] Log - Navigate from Home page to Login page
-[INFO ] 18-04-2022 13:36:57 [main] Log - Login with valid Email and invalid Password
-[INFO ] 18-04-2022 13:36:58 [main] Log - Check error message of invalid fields
-[INFO ] 18-04-2022 13:36:58 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:37:03 [main] Log - ------------------------Start TC04------------------------
-[INFO ] 18-04-2022 13:37:03 [main] Log - Register a new account
-[INFO ] 18-04-2022 13:37:06 [main] Log - Navigate from Home page to Book Ticket page
-[INFO ] 18-04-2022 13:37:07 [main] Log - Check user is redirected to Login page
-[INFO ] 18-04-2022 13:37:07 [main] Log - Login with valid Email and Password
-[INFO ] 18-04-2022 13:37:08 [main] Log - Check user is redirected to Book Ticket page after logging in
-[INFO ] 18-04-2022 13:37:08 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:37:13 [main] Log - ------------------------Start TC05------------------------
-[INFO ] 18-04-2022 13:37:13 [main] Log - Register new account
-[INFO ] 18-04-2022 13:37:15 [main] Log - Navigate from Home page to Login page
-[INFO ] 18-04-2022 13:37:16 [main] Log - Repeat Login 3 times with valid email and wrong password
-[INFO ] 18-04-2022 13:37:19 [main] Log - Check error system message
-[INFO ] 18-04-2022 13:37:24 [main] Log - ------------------------Start TC06------------------------
-[INFO ] 18-04-2022 13:37:24 [main] Log - Register new account
-[INFO ] 18-04-2022 13:37:27 [main] Log - Login with valid Email and Password
-[INFO ] 18-04-2022 13:37:29 [main] Log - Navigate from Home page to Contact page
-[INFO ] 18-04-2022 13:37:30 [main] Log - Logout from Contact page
-[INFO ] 18-04-2022 13:37:32 [main] Log - Check user is redirect to Home page after logging out
-[INFO ] 18-04-2022 13:37:32 [main] Log - Check 'Logout' tab is disappeared
-[INFO ] 18-04-2022 13:37:32 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:37:38 [main] Log - ------------------------Start TC07------------------------
-[INFO ] 18-04-2022 13:37:38 [main] Log - Navigate from Home page to Register page
-[INFO ] 18-04-2022 13:37:39 [main] Log - Enter valid register information
-[INFO ] 18-04-2022 13:37:40 [main] Log - Check Register Successfully Message
-[INFO ] 18-04-2022 13:37:40 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:37:45 [main] Log - ------------------------Start TC09------------------------
-[INFO ] 18-04-2022 13:37:45 [main] Log - Register a new account
-[INFO ] 18-04-2022 13:37:47 [main] Log - Navigate from Home page to Login page
-[INFO ] 18-04-2022 13:37:48 [main] Log - Login with valid Email and Password above
-[INFO ] 18-04-2022 13:37:50 [main] Log - Change Password with "New Password" and "Confirm Password" are different
-[INFO ] 18-04-2022 13:37:51 [main] Log - Check Error Message Of Change Password Form
-[INFO ] 18-04-2022 13:37:51 [main] Log - Check Error Message Of Confirm Password Field
-[INFO ] 18-04-2022 13:37:51 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:37:57 [main] Log - ------------------------Start TC10------------------------
-[INFO ] 18-04-2022 13:37:57 [main] Log - Navigate from Home page to Register page
-[INFO ] 18-04-2022 13:37:57 [main] Log - Register a new account
-[INFO ] 18-04-2022 13:37:59 [main] Log - Register again with an already in-use email above
-[INFO ] 18-04-2022 13:38:01 [main] Log - Check error message for registering with an already in-use email
-[INFO ] 18-04-2022 13:38:01 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:38:05 [main] Log - ------------------------Start TC11------------------------
-[INFO ] 18-04-2022 13:38:05 [main] Log - Navigate from Home page to Register page
-[INFO ] 18-04-2022 13:38:06 [main] Log - Register account with valid email address and leave other fields empty
-[INFO ] 18-04-2022 13:38:07 [main] Log - Check Error Message Of Register Form
-[INFO ] 18-04-2022 13:38:07 [main] Log - Check error message invalid Password Length
-[INFO ] 18-04-2022 13:38:07 [main] Log - Check error message invalid Password Length
-[INFO ] 18-04-2022 13:38:07 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:38:12 [main] Log - ------------------------Start TC14------------------------
-[INFO ] 18-04-2022 13:38:12 [main] Log - Register a new account
-[INFO ] 18-04-2022 13:38:14 [main] Log - Login with valid Email and Password
-[INFO ] 18-04-2022 13:38:16 [main] Log - Navigate from Home page to Book ticket page
-[INFO ] 18-04-2022 13:38:17 [main] Log - Book tickets
-[INFO ] 18-04-2022 13:38:22 [main] Log - Check Book Ticket Successfully Message
-[INFO ] 18-04-2022 13:38:22 [main] Log - Check all book ticket information display correctly
-[INFO ] 18-04-2022 13:38:22 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:38:28 [main] Log - ------------------------Start TC15------------------------
-[INFO ] 18-04-2022 13:38:28 [main] Log - Register a new account
-[INFO ] 18-04-2022 13:38:30 [main] Log - Login with valid Email and Password
-[INFO ] 18-04-2022 13:38:32 [main] Log - Navigate from Home page to Time Table page
-[INFO ] 18-04-2022 13:38:33 [main] Log - Click on "check price" link of the route from "Đà Nẵng" to "Sài Gòn"
-[INFO ] 18-04-2022 13:38:34 [main] Log - Check "Ticket Price" page is loaded
-[INFO ] 18-04-2022 13:38:34 [main] Log - Check Price for each seat displays correctly
-[INFO ] 18-04-2022 13:38:34 [main] Log - -------------------------E---N---D-------------------------
-[INFO ] 18-04-2022 13:38:39 [main] Log - ------------------------Start TC16------------------------
-[INFO ] 18-04-2022 13:38:39 [main] Log - Register a new account
-[INFO ] 18-04-2022 13:38:42 [main] Log - Login with valid Email and Password
-[INFO ] 18-04-2022 13:38:44 [main] Log - Navigate from Home page to Book Ticket page
-[INFO ] 18-04-2022 13:38:45 [main] Log - Book a ticket
-[INFO ] 18-04-2022 13:38:50 [main] Log - Navigate from Book Ticket page to 'My Ticket' page
-[INFO ] 18-04-2022 13:38:51 [main] Log - Click on 'Cancel' Button on My Ticket page
-[INFO ] 18-04-2022 13:38:51 [main] Log - Click on "OK" button on Confirmation message "Are you sure?"
-[INFO ] 18-04-2022 13:38:53 [main] Log - Check No Ticket message in My Ticket page
-[INFO ] 18-04-2022 13:38:53 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:31:57 [main] Log - ------------------------Start TC01------------------------
+[INFO ] 18-04-2022 16:31:59 [main] Log - Step 1: Navigate from Home page to Login page
+[INFO ] 18-04-2022 16:31:59 [main] Log - Step 2: Login with valid username and password
+[INFO ] 18-04-2022 16:32:01 [main] Log - Expected Behavior: Check user is logged into to Railway
+[INFO ] 18-04-2022 16:32:03 [main] Log - Expected Behavior: Check Welcome user message on banner after logging in successfully
+[INFO ] 18-04-2022 16:32:03 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:32:08 [main] Log - ------------------------Start TC02------------------------
+[INFO ] 18-04-2022 16:32:08 [main] Log - Step 1: Navigate from Home page to Login page
+[INFO ] 18-04-2022 16:32:09 [main] Log - Step 2: Login with blank Email and valid Password
+[INFO ] 18-04-2022 16:32:12 [main] Log - Expected Behavior: Check error message of login form
+[INFO ] 18-04-2022 16:32:12 [main] Log - Expected Behavior: Check error message of  email field
+[INFO ] 18-04-2022 16:32:12 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:32:18 [main] Log - ------------------------Start TC03------------------------
+[INFO ] 18-04-2022 16:32:18 [main] Log - Step 1: Navigate from Home page to Login page
+[INFO ] 18-04-2022 16:32:18 [main] Log - Step 2: Login with valid Email and invalid Password
+[INFO ] 18-04-2022 16:32:19 [main] Log - Expected Behavior: Check error message of invalid fields
+[INFO ] 18-04-2022 16:32:19 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:32:24 [main] Log - ------------------------Start TC04------------------------
+[INFO ] 18-04-2022 16:32:26 [main] Log - Step 1: Navigate from Home page to Book Ticket page
+[INFO ] 18-04-2022 16:32:27 [main] Log - Expected Behavior: Check user is redirected to Login page
+[INFO ] 18-04-2022 16:32:27 [main] Log - Step 2: Login with valid Email and Password
+[INFO ] 18-04-2022 16:32:28 [main] Log - Expected Behavior: Check user is redirected to Book Ticket page after logging in
+[INFO ] 18-04-2022 16:32:28 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:32:33 [main] Log - ------------------------Start TC05------------------------
+[INFO ] 18-04-2022 16:32:35 [main] Log - Step 1: Navigate from Home page to Login page
+[INFO ] 18-04-2022 16:32:35 [main] Log - Step 2: Repeat Login 3 times with valid email and wrong password
+[INFO ] 18-04-2022 16:32:37 [main] Log - Expected Behavior: Check error system message
+[INFO ] 18-04-2022 16:32:42 [main] Log - ------------------------Start TC06------------------------
+[INFO ] 18-04-2022 16:32:44 [main] Log - Step 1: Navigate from Home page to Login page
+[INFO ] 18-04-2022 16:32:45 [main] Log - Step 2: Login with valid Email and Password
+[INFO ] 18-04-2022 16:32:46 [main] Log - Step 3: Navigate from Home page to Contact page
+[INFO ] 18-04-2022 16:32:47 [main] Log - Step 4: Logout
+[INFO ] 18-04-2022 16:32:48 [main] Log - Expected Behavior: Check user is redirect to Home page after logging out
+[INFO ] 18-04-2022 16:32:48 [main] Log - Expected Behavior: Check 'Logout' tab is disappeared
+[INFO ] 18-04-2022 16:32:48 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:32:53 [main] Log - ------------------------Start TC07------------------------
+[INFO ] 18-04-2022 16:32:53 [main] Log - Step 1: Navigate from Home page to Register page
+[INFO ] 18-04-2022 16:32:54 [main] Log - Step 2: Enter valid register information
+[INFO ] 18-04-2022 16:32:55 [main] Log - Expected Behavior: Check Register Successfully Message
+[INFO ] 18-04-2022 16:32:55 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:33:00 [main] Log - ------------------------Start TC09------------------------
+[INFO ] 18-04-2022 16:33:00 [main] Log - Pre-condition: Register a new account
+[INFO ] 18-04-2022 16:33:02 [main] Log - Step 1: Navigate from Home page to Login page
+[INFO ] 18-04-2022 16:33:02 [main] Log - Step 2: Login with valid Email and Password above
+[INFO ] 18-04-2022 16:33:04 [main] Log - Step 3: Navigate to Change Password page
+[INFO ] 18-04-2022 16:33:04 [main] Log - Step 4: Change Password with "New Password" and "Confirm Password" are different
+[INFO ] 18-04-2022 16:33:05 [main] Log - Expected Behavior: Check Error Message Of Change Password Form
+[INFO ] 18-04-2022 16:33:05 [main] Log - Expected Behavior: Check Error Message Of Confirm Password Field
+[INFO ] 18-04-2022 16:33:05 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:33:10 [main] Log - ------------------------Start TC10------------------------
+[INFO ] 18-04-2022 16:33:10 [main] Log - Pre-condition: Create and activate a new account
+[INFO ] 18-04-2022 16:33:14 [main] Log - Step 1: Navigate from Home page to Register page
+[INFO ] 18-04-2022 16:33:16 [main] Log - Step 2: Register with information of the created account in Pre-condition
+[INFO ] 18-04-2022 16:33:17 [main] Log - Expected Behavior: Check error message for registering with an already in-use email
+[INFO ] 18-04-2022 16:33:17 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:33:22 [main] Log - ------------------------Start TC11------------------------
+[INFO ] 18-04-2022 16:33:22 [main] Log - Step 1: Navigate from Home page to Register page
+[INFO ] 18-04-2022 16:33:23 [main] Log - Step 2: Register account with valid email address and leave other fields empty
+[INFO ] 18-04-2022 16:33:23 [main] Log - Expected Behavior: Check Error Message Of Register Form
+[INFO ] 18-04-2022 16:33:23 [main] Log - Expected Behavior: Check error message invalid Password Length
+[INFO ] 18-04-2022 16:33:24 [main] Log - Expected Behavior: Check error message invalid Password Length
+[INFO ] 18-04-2022 16:33:24 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:33:28 [main] Log - ------------------------Start TC14------------------------
+[INFO ] 18-04-2022 16:33:28 [main] Log - Pre-condition: Create and activate a new account
+[INFO ] 18-04-2022 16:33:30 [main] Log - Step 1: Navigate to Login page
+[INFO ] 18-04-2022 16:33:31 [main] Log - Step 2: Login with valid Email and Password
+[INFO ] 18-04-2022 16:33:32 [main] Log - Step 3: Navigate to Book ticket page
+[INFO ] 18-04-2022 16:33:33 [main] Log - Step 4: Book tickets
+[INFO ] 18-04-2022 16:33:39 [main] Log - Expected Behavior: Check Book Ticket Successfully Message
+[INFO ] 18-04-2022 16:33:39 [main] Log - Expected Behavior: Check all book ticket information display correctly
+[INFO ] 18-04-2022 16:33:39 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:33:43 [main] Log - ------------------------Start TC15------------------------
+[INFO ] 18-04-2022 16:33:43 [main] Log - Pre-condition: Create and activate a new account
+[INFO ] 18-04-2022 16:33:45 [main] Log - Step 1: Navigate to Login page
+[INFO ] 18-04-2022 16:33:46 [main] Log - Step 2: Login with valid Email and Password
+[INFO ] 18-04-2022 16:33:47 [main] Log - Step 3: Navigate to Time Table page
+[INFO ] 18-04-2022 16:33:48 [main] Log - Step 4: Click on "check price" link of the route from "Đà Nẵng" to "Sài Gòn"
+[INFO ] 18-04-2022 16:33:49 [main] Log - Expected Behavior: Check "Ticket Price" page is loaded
+[INFO ] 18-04-2022 16:33:49 [main] Log - Expected Behavior: Check Price for each seat displays correctly
+[INFO ] 18-04-2022 16:33:49 [main] Log - -------------------------E---N---D-------------------------
+[INFO ] 18-04-2022 16:33:55 [main] Log - ------------------------Start TC16------------------------
+[INFO ] 18-04-2022 16:33:55 [main] Log - Pre-condition: Create and activate a new account
+[INFO ] 18-04-2022 16:33:57 [main] Log - Step 1: Navigate to Login page
+[INFO ] 18-04-2022 16:33:58 [main] Log - Step 2: Login with valid Email and Password
+[INFO ] 18-04-2022 16:33:59 [main] Log - Step 3: Book a ticket
+[INFO ] 18-04-2022 16:34:05 [main] Log - Step 4: Navigate to 'My Ticket' page
+[INFO ] 18-04-2022 16:34:06 [main] Log - Step 5: Click on 'Cancel' Button on My Ticket page
+[INFO ] 18-04-2022 16:34:06 [main] Log - Step 6: Click on "OK" button on Confirmation message "Are you sure?"
+[INFO ] 18-04-2022 16:34:08 [main] Log - Expected Behavior: Check No Ticket message in My Ticket page
+[INFO ] 18-04-2022 16:34:08 [main] Log - -------------------------E---N---D-------------------------

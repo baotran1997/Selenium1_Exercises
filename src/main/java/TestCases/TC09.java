@@ -28,24 +28,26 @@ public class TC09 extends BaseTest {
         String errorMessageOfChangePasswordForm = data[6].toString();
         String errorMessageOfConfirmPasswordField = data[7].toString();
 
-        Log.info("Register a new account");
+        Log.info("Pre-condition: Register a new account");
         homePage.navigateToRegisterPage();
         registerPage.registerAccount(email,password,confirmPassword,passportNumber);
 
-        Log.info("Navigate from Home page to Login page");
+        Log.info("Step 1: Navigate from Home page to Login page");
         homePage.navigateToLoginPage();
 
-        Log.info("Login with valid Email and Password above");
+        Log.info("Step 2: Login with valid Email and Password above");
         loginPage.login(email, password);
 
-        Log.info("Change Password with \"New Password\" and \"Confirm Password\" are different");
+        Log.info("Step 3: Navigate to Change Password page");
         homePage.navigateToChangePasswordPage();
+
+        Log.info("Step 4: Change Password with \"New Password\" and \"Confirm Password\" are different");
         changePasswordPage.changePassword(password, newPassword, confirmNewPassword);
 
-        Log.info("Check Error Message Of Change Password Form");
+        Log.info("Expected Behavior: Check Error Message Of Change Password Form");
         changePasswordPage.checkErrorMessageOfChangePasswordForm(errorMessageOfChangePasswordForm);
 
-        Log.info("Check Error Message Of Confirm Password Field");
+        Log.info("Expected Behavior: Check Error Message Of Confirm Password Field");
         changePasswordPage.checkErrorMessageOfConfirmPasswordField(errorMessageOfConfirmPasswordField);
 
         Log.endTestCase();

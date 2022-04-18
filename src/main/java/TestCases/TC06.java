@@ -24,24 +24,25 @@ public class TC06 extends BaseTest {
         String confirmPassword = data[2].toString();
         String passportNumber = data[3].toString();
 
-        Log.info("Register new account");
         homePage.navigateToRegisterPage();
         registerPage.registerAccount(email,password,confirmPassword,passportNumber);
 
-        Log.info("Login with valid Email and Password");
+        Log.info("Step 1: Navigate from Home page to Login page");
         homePage.navigateToLoginPage();
+
+        Log.info("Step 2: Login with valid Email and Password");
         loginPage.login(email, password);
 
-        Log.info("Navigate from Home page to Contact page");
+        Log.info("Step 3: Navigate from Home page to Contact page");
         homePage.navigateToContactPage();
 
-        Log.info("Logout from Contact page");
+        Log.info("Step 4: Logout");
         contactPage.navigateToLogoutTab();
 
-        Log.info("Check user is redirect to Home page after logging out");
+        Log.info("Expected Behavior: Check user is redirect to Home page after logging out");
         homePage.checkHomePageURL();
 
-        Log.info("Check 'Logout' tab is disappeared");
+        Log.info("Expected Behavior: Check 'Logout' tab is disappeared");
         homePage.isLogoutTabDisplayed();
         Log.endTestCase();
     }

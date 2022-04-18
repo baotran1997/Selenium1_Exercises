@@ -25,20 +25,19 @@ public class TC04 extends BaseTest {
         String confirmPassword = data[2].toString();
         String passportNumber = data[3].toString();
 
-        Log.info("Register a new account");
         homePage.navigateToRegisterPage();
         registerPage.registerAccount(email,password,confirmPassword,passportNumber);
 
-        Log.info("Navigate from Home page to Book Ticket page");
+        Log.info("Step 1: Navigate from Home page to Book Ticket page");
         homePage.navigateToBookTicketPage();
 
-        Log.info("Check user is redirected to Login page");
+        Log.info("Expected Behavior: Check user is redirected to Login page");
         bookTicketPage.checkRedirectedLoginUrl();
 
-        Log.info("Login with valid Email and Password");
+        Log.info("Step 2: Login with valid Email and Password");
         loginPage.login(email, password);
 
-        Log.info("Check user is redirected to Book Ticket page after logging in");
+        Log.info("Expected Behavior: Check user is redirected to Book Ticket page after logging in");
         bookTicketPage.checkBookTicketURL();
         Log.endTestCase();
     }

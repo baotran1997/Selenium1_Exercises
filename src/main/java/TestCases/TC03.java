@@ -18,13 +18,13 @@ public class TC03 extends BaseTest {
         String invalidPassword = data[1].toString();
         String expectedErrorMessageOfInvalidFields = data[2].toString();
 
-        Log.info("Navigate from Home page to Login page");
+        Log.info("Step 1: Navigate from Home page to Login page");
         homePage.navigateToLoginPage();
 
-        Log.info("Login with valid Email and invalid Password");
+        Log.info("Step 2: Login with valid Email and invalid Password");
         loginPage.login(validUsername, invalidPassword);
 
-        Log.info("Check error message of invalid fields");
+        Log.info("Expected Behavior: Check error message of invalid fields");
         loginPage.checkErrorMessageOfInvalidFields(expectedErrorMessageOfInvalidFields);
         Log.endTestCase();
     }

@@ -28,30 +28,30 @@ public class TC16 extends BaseTest {
         String seatType = data[7].toString();
         String ticketAmount = data[8].toString();
 
-        Log.info("Register a new account");
+        Log.info("Pre-condition: Create and activate a new account");
         homePage.navigateToRegisterPage();
         registerPage.registerAccount(email,password,confirmPassword,passportNumber);
 
-        Log.info("Login with valid Email and Password");
+        Log.info("Step 1: Navigate to Login page");
         homePage.navigateToLoginPage();
+
+        Log.info("Step 2: Login with valid Email and Password");
         loginPage.login(email,password);
 
-        Log.info("Navigate from Home page to Book Ticket page");
+        Log.info("Step 3: Book a ticket");
         homePage.navigateToBookTicketPage();
-
-        Log.info("Book a ticket");
         bookTicketPage.bookTicket(departDate, departFrom, arriveAt, seatType,ticketAmount);
 
-        Log.info("Navigate from Book Ticket page to 'My Ticket' page");
+        Log.info("Step 4: Navigate to 'My Ticket' page");
         bookTicketPage.navigateToMyTicketPage();
 
-        Log.info("Click on 'Cancel' Button on My Ticket page");
+        Log.info("Step 5: Click on 'Cancel' Button on My Ticket page");
         myTicketPage.clickCancelButton();
 
-        Log.info("Click on \"OK\" button on Confirmation message \"Are you sure?\"");
+        Log.info("Step 6: Click on \"OK\" button on Confirmation message \"Are you sure?\"");
         myTicketPage.clickAcceptButton();
 
-        Log.info("Check No Ticket message in My Ticket page");
+        Log.info("Expected Behavior: Check No Ticket message in My Ticket page");
         myTicketPage.checkNoTicketInMyTicketPage();
         Log.endTestCase();
     }

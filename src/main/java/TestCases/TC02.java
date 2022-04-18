@@ -19,16 +19,16 @@ public class TC02 extends BaseTest {
         String expectedErrorMessageOfLoginForm = data[2].toString();
         String expectedErrorMessageOfEmailField = data[3].toString();
 
-        Log.info("Navigate from Home page to Login page");
+        Log.info("Step 1: Navigate from Home page to Login page");
         homePage.navigateToLoginPage();
 
-        Log.info("Login with blank Email and valid Password");
+        Log.info("Step 2: Login with blank Email and valid Password");
         loginPage.login(blankUsername, validPassword);
 
-        Log.info("Check error message of login form");
+        Log.info("Expected Behavior: Check error message of login form");
         loginPage.checkErrorMessageOfLoginForm(expectedErrorMessageOfLoginForm);
 
-        Log.info("Check error message of  email field");
+        Log.info("Expected Behavior: Check error message of  email field");
         loginPage.checkErrorMessageOfEmailField(expectedErrorMessageOfEmailField);
         Log.endTestCase();
     }

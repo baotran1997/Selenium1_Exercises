@@ -21,21 +21,20 @@ public class TC01 extends BaseTest {
         String confirmPassword = data[2].toString();
         String passportNumber = data[3].toString();
 
-        Log.info("Register a new account");
         homePage.navigateToRegisterPage();
         registerPage.registerAccount(email,password,confirmPassword,passportNumber);
 
-        Log.info("Navigate from Home page to Login page");
+        Log.info("Step 1: Navigate from Home page to Login page");
         homePage.navigateToLoginPage();
 
-        Log.info("Login with valid username and password");
+        Log.info("Step 2: Login with valid username and password");
         loginPage.login(email,password);
 
-        Log.info("Check Home page URL after logging in successfully");
+        Log.info("Expected Behavior: Check user is logged into to Railway");
         homePage.checkHomePageURL();
         loginPage.zoomInScreen();
 
-        Log.info("Check Welcome user message on banner after logging in successfully");
+        Log.info("Expected Behavior: Check Welcome user message on banner after logging in successfully");
         homePage.checkWelcomeUserMessage(email);
 
         Log.endTestCase();

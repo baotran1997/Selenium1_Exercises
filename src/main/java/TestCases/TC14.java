@@ -32,24 +32,26 @@ public class TC14 extends BaseTest {
         String ticketAmount = data[8].toString();
         String bookTicketSuccessfullyMessage = data[9].toString();
 
-        Log.info("Register a new account");
+        Log.info("Pre-condition: Create and activate a new account");
         homePage.navigateToRegisterPage();
         registerPage.registerAccount(email,password,confirmPassword,passportNumber);
 
-        Log.info("Login with valid Email and Password");
+        Log.info("Step 1: Navigate to Login page");
         homePage.navigateToLoginPage();
+
+        Log.info("Step 2: Login with valid Email and Password");
         loginPage.login(email,password);
 
-        Log.info("Navigate from Home page to Book ticket page");
+        Log.info("Step 3: Navigate to Book ticket page");
         homePage.navigateToBookTicketPage();
 
-        Log.info("Book tickets");
+        Log.info("Step 4: Book tickets");
         bookTicketPage.bookTicket(departDate, departFrom, arriveAt, seatType,ticketAmount);
 
-        Log.info("Check Book Ticket Successfully Message");
+        Log.info("Expected Behavior: Check Book Ticket Successfully Message");
         bookTicketPage.checkBookTicketSuccessfullyMessage(bookTicketSuccessfullyMessage);
 
-        Log.info("Check all book ticket information display correctly");
+        Log.info("Expected Behavior: Check all book ticket information display correctly");
         bookTicketPage.checkAllTicketInformation(departFrom, arriveAt, seatType, departDate, ticketAmount);
         Log.endTestCase();
     }
